@@ -18,14 +18,14 @@ const Navbar = () => {
       {/* Logo 
       
        <nav className="flex items-center justify-between px-5 mx-auto shadow-sm md:bg-green-700 lg:bg-red-600 bg-blue-600 md:w-full md:max-w-3xl lg:w-">*/}
-      <div className="text-2xl  font-bold text-black  px-4 py-8 rounded-tl-lg rounded-br-lg tracking-wide">
+      <div className="text-2xl  font-bold text-[text-[#163546]]  px-4 py-8 rounded-tl-lg rounded-br-lg tracking-wide">
        
         <p className="font-bold text-3xl">Consulting.</p>
       </div>
 
       {/* Navigation Links     rgb(255, 255, 255) */}
-      <ul className=" space-x-6 text-[#343a40] font-semibold  hidden md:flex ">
-        <li><Link href="#" className="hover:text-[#343a40]">Home</Link></li>
+      <ul className=" space-x-6 text-[text-[#163546]] font-semibold  hidden md:flex ">
+        <li><Link href="#" className="hover:text-[#343a40] ">Home</Link></li>
         <li><Link href="#" className="hover:text-[#343a40]">About</Link></li>
         <li><Link href="#" className="hover:text-[#343a40]">Services</Link></li>
         <li><Link href="#" className="hover:text-[#343a40]">Blog</Link></li>
@@ -48,7 +48,7 @@ const Navbar = () => {
     {/* Mobile Menu */}
       {isOpen && (
         <ul className="md:hidden flex flex-col space-y-4 px-6 pb-4  font-semibold bg-white">
-          <li><Link href="#" className="hover:text-white text-[#343a40]">Home</Link></li>
+          <li><Link href="#" className="hover:text-white text-[#163546]">Home</Link></li>
           <li><Link href="#" className="hover:text-[#343a40] text-[#343a40]">About</Link></li>
           <li><Link href="#" className="hover:text-[#343a40] text-[#343a40]">Services</Link></li>
           <li><Link href="#" className="hover:text-[#343a40] text-[#343a40]">Blog</Link></li>

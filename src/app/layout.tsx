@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-//import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 
 
 
@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
          <div className="mx-auto max-w-[85rem] w-full ">
-          { /*<Navbar/>*/}
+          <Navbar/>
             
         {children}
         </div>
