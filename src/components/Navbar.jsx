@@ -20,7 +20,7 @@ const Navbar = () => {
        <nav className="flex items-center justify-between px-5 mx-auto shadow-sm md:bg-green-700 lg:bg-red-600 bg-blue-600 md:w-full md:max-w-3xl lg:w-">*/}
       <div className="text-2xl  font-bold text-[text-[#163546]]  px-4 py-8 rounded-tl-lg rounded-br-lg tracking-wide">
        
-        <p className="font-bold text-3xl">Consulting.</p>
+        <p className="font-bold text-3xl text-[#092c3f]">Brando & Associates.</p>
       </div>
 
       {/* Navigation Links     rgb(255, 255, 255) */}
