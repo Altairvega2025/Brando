@@ -1,12 +1,12 @@
 import { title } from "process";
 
-import { FaCode,FaPaintBrush} from "react-icons/fa";
+import { FaPaintBrush, FaFileImage} from "react-icons/fa";
 
 import { GiOrganigram,GiSatelliteCommunication} from "react-icons/gi";
 
 import { HiMiniIdentification} from "react-icons/hi2";
 
-import { MdPolicy,MdPermMedia} from "react-icons/md";
+import { MdPolicy} from "react-icons/md";
 
 export const titleClassName = "font-semibold text-[18px]";
 export const headerclass="font-bold text-[34px]  text-[#092c3f]"
@@ -52,7 +52,7 @@ export const What_We_Do = [
     message: "Strategic Communications",
     name:"Messaging architecture, market positioning, narrative control. ",
   },{img: "/Testimonials.jpg",
-     icon: <MdPermMedia size={50} className="text-[#ec5f74]" />,
+     icon: <FaFileImage size={50} className="text-[#ec5f74]" />,
     message: "Public Relations & Media Ops",
     name:"International press, crisis strategy, long-term narrative warfare. ",
   },{img: "/Testimonials.jpg",

@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import bgimg from '../../public/bgimg.jpg'
+import meeting from '../../public/meeting.jpg'
+import workwithus from '../../public/workwithus.jpg'
 import footer_bg from '../../public/footer_bg.jpg'
 import { FaLinkedinIn,FaQuoteRight,} from "react-icons/fa";
 import { SiNotion } from "react-icons/si";
@@ -32,24 +34,30 @@ export default function Home() {
   <div className="relative">
     <Image src={bgimg} alt="chia" className="bg-cover w-full h-auto" />
 
-    <div className=" absolute top-1/3 left-4 md:left-16 max-w-md lg:max-w-xl w-full p-4 md:p-6 text-[#43121d]">
+    <div className=" absolute top-1/3 left-4 md:left-16 max-w-md lg:max-w-xl w-full p-4 md:p-6 ">
       <div className="flex flex-col gap-4">
         
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-snug text-black">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-black">
          We Don’t Do PR. We Engineer Perception.
         </h1>
 
-        <p className="text-sm sm:text-base md:text-lg text-[#000000]">
+        <p className={`text-sm sm:text-base md:text-lg text-[#000000]${textclass}`}>
           A referral-only strategic communications firm scaling influence across Africa, the diaspora, and
 the global stage.
         </p>
-<p className="text-[#000000] text-sm font-semibold">Slow loop of Lagos traffic at night → fade to Capitol Hill steps → aerial of Johannesburg skyline
+<p className={`text-[#000000] text-sm font-medium`}>Slow loop of Lagos traffic at night → fade to Capitol Hill steps → aerial of Johannesburg skyline
 → sleek boardroom in Dubai.</p>
         
         <div className="flex flex-col sm:flex-row gap-4 mt-2">
-  <button className="bg-[#ff2143] text-white px-6 py-3 rounded-none shadow hover:bg-[#92203c] transition w-fit whitespace-nowrap">
-    <Link href="#">For vetted partners only</Link>
-  </button>
+ 
+
+<button className="relative overflow-hidden group px-6 py-3 w-fit whitespace-nowrap font-medium text-white bg-[#ff2143] rounded-none shadow">
+  <span className="relative z-10 group-hover:text-black transition duration-300">
+    <Link href="#">For Vetted Partners Only</Link>
+  </span>
+  <span className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+</button>
+
 </div>
 
       </div>
@@ -60,27 +68,51 @@ the global stage.
 
 
 
+
+
+
 <section className="pt-20 bg-[#f7f7f7] ">
   <div className="bg-[#f7f7f7] w-full justify-center text-center py-20">
-    <p className={`text-[#ec5f74] ${titleClassName}`}>What We Do</p>
-<p className={`text-[#092c3f] ${headerclass}`}>We don’t offer services. We shift outcomes.</p>
+    <p className={`text-[#ec5f74] font-semibold ${textclass}`}>What We Do</p>
+<p className={`text-[#092c3f]  font-bold  ${headerclass}`}>We don’t offer services. We shift outcomes.</p>
 
    
+
+
+
+
+
+
+
 
 <div className="flex flex-wrap gap-8 max-w-6xl mx-auto pt-20">
   {What_We_Do.map((item, index) => (
     <div
       key={index}
-      className="flex flex-col items-center bg-white p-4 rounded-xl shadow-md  md:w-[calc(50%-1rem)] lg:w-[calc(32.333%-1rem)] text-center hover:bg-[#ff2143] py-10 gap-8"
+      className="relative group overflow-hidden rounded-xl shadow-md md:w-[calc(50%-1rem)] lg:w-[calc(32.333%-1rem)] text-center"
     >
-       {item.icon}
-       <div className="flex flex-col gap-3">
-      <p className={` text-[#1c1663]  ${titleClassName}`}>{item.message}</p>
-      
-      <p className={textclass}>{item.name}</p>
-    </div></div>
+      {/* Hover background slide */}
+      <div className="absolute inset-0 bg-[#ff2143] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0" />
+
+      {/* Card Content */}
+      <div className="relative z-10 flex flex-col items-center bg-white p-10 gap-8 group-hover:bg-transparent transition-colors duration-500">
+        {item.icon}
+
+        <div className="flex flex-col gap-3">
+          <p className={`text-[#1c1663] group-hover:text-white transition-colors duration-300 ${titleClassName}`}>
+            {item.message}
+          </p>
+          <p className={`text-[#9189a4] font-medium text-[17px] group-hover:text-white transition-colors duration-300 ${textclass}`}>
+            {item.name}
+          </p>
+        </div>
+      </div>
+    </div>
   ))}
 </div>
+
+
+
   </div>
 
 
@@ -88,8 +120,8 @@ the global stage.
 </section>
 
 <section className="px-6 py-16  space-y-20 bg-[#f7f7f7]">
-   <div className="space-y-6 text-left max-w-5xl mx-auto">
-        <h2 className="text-3xl font-bold text-[#092c3f]">Who We Work With</h2>
+   <div className="space-y-6  max-w-6xl mx-auto">
+        <h2 className={`text-[#092c3f]  font-bold  ${headerclass}`}>Who We Work With</h2>
         <p className="text-lg text-[#ec5f74] italic">
           Selective. Sovereign. Scale-driven.
         </p>
@@ -112,7 +144,7 @@ the global stage.
 
 <section className="bg-[#f7f7f7] text-black px-6 py-20 text-center">
   <div className="max-w-4xl mx-auto">
-    <h2 className="text-3xl font-bold mb-4">Our Presence</h2>
+    <h2 className={`text-[#092c3f]  font-bold mb-4  ${headerclass}`}>Our Presence</h2>
     <p className="text-lg mb-2 font-medium text-[#ec5f74]">
       Chicago &nbsp;|&nbsp; Lagos &nbsp;|&nbsp; Accra &nbsp;|&nbsp; London &nbsp;|&nbsp; Dubai &nbsp;|&nbsp; Japan
     </p>
@@ -123,14 +155,19 @@ the global stage.
 </section>
 
 
-<section className=" px-6 py-20 text-center md:text-left bg-[#f7f7f7]">
-  <div className="max-w-4xl mx-auto">
-    <h2 className="text-4xl font-bold mb-6 text-[#092c3f]">Why Brando?</h2>
+<section className=" px-6 py-20 text-center md:text-left bg-[#f7f7f7]  ">
+  <div className="max-w-6xl mx-auto flex gap-6 ">
+  <div className=" w-[35%]">
+    <h2 className={`text-[#092c3f]  font-bold mb-6 ${headerclass}`}>Why Brando?</h2>
     <p className="text-lg mb-4">We are not like them. We’re not trying to be.</p>
     <p className="text-lg mb-4">Brando speaks to systems.</p>
     <p className="text-lg mb-4">They pitch for funding. <span className="font-semibold text-[#ef96a0]">We build legacies.</span></p>
     <p className="text-lg">They generate buzz. <span className="font-semibold text-[#ef96a0]">We manufacture belief.</span></p>
   </div>
+  <div className="w-[55%]">
+     <Image src={meeting} alt="chia" className="bg-cover w-full h-auto" />
+
+  </div></div>
 </section>
 
 
@@ -141,11 +178,11 @@ the global stage.
 
 
 <section className="pt-20 bg-[#f7f7f7]">
- 
-  <div className="py-20 px-6 flex justify-center items-center">
-  <div className="max-w-2xl w-full text-center   p-10 space-y-6">
+  <div className="max-w-6xl mx-auto ">
+  <div className="  flex  gap-6 ">
+  <div className=" w-[35%]    p-10 space-y-6">
     
-    <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 flex justify-center items-center gap-2">
+    <h2  className={`text-[#092c3f]  font-bold flex justify-center items-center gap-2 ${headerclass}`}>
       🤝 Work With Us
     </h2>
 
@@ -168,8 +205,11 @@ the global stage.
       </p>
     </div>
   </div>
+  <div className="w-[55%]">
+    <Image src={workwithus} alt="chia" className="bg-cover  h-auto" />
+  </div>
 </div>
-
+</div>
 </section>
 
 
@@ -179,10 +219,10 @@ the global stage.
 
 <section className="pt-20 bg-[#092c3f]">
   <div className=" w-full justify-center text-center ">
-    <p className={`text-[#43121d] font-semibold ${headerclass}`}>Words We Live By
+    <p  className={`text-[#43121d]  font-bold  ${headerclass}`} >Words We Live By
 
 </p>
-<div className="flex justify-center items-center">
+<div className="flex justify-center items-center mt-6">
 <FaQuoteRight color="#f04e3c" size="55" /> </div>
    
 
@@ -204,7 +244,7 @@ the global stage.
             key={currentIndex}
             className="flex flex-col  p-4 rounded-xl shadow-md w-full "
           >
-            <p className={`font-medium text-[#788e9a] ${titleClassName}`}>
+            <p className={`font-semibold text-[#788e9a] ${textclass}`}>
               {quote[currentIndex].title}
             </p>
           </div>
