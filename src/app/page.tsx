@@ -30,36 +30,37 @@ export default function Home() {
 
   return (
    <div className="">
-     <section>
-  <div className="relative">
-    <Image src={bgimg} alt="chia" className="bg-cover w-full h-auto" />
 
-    <div className=" absolute top-1/3 left-4 md:left-16 max-w-md lg:max-w-xl w-full p-4 md:p-6 ">
-      <div className="flex flex-col gap-4">
-        
+<section className="mt-20">
+  <div className="relative">
+    <Image
+      src={bgimg}
+      alt="chia"
+      className="w-full h-auto min-h-[120vh] object-cover blur-[2px]" // Increased image height
+    />
+
+    <div className="absolute top-1/4 sm:top-1/3 left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
+      <div className="flex flex-col gap-6"> {/* Increased gap between elements */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-black">
-         We Don’t Do PR. We Engineer Perception.
+          We Don’t Do PR. We Engineer Perception.
         </h1>
 
-        <p className={`text-sm sm:text-base md:text-lg text-[#000000]${textclass}`}>
-          A referral-only strategic communications firm scaling influence across Africa, the diaspora, and
-the global stage.
+        <p className={`text-sm sm:text-base md:text-lg text-black ${textclass}`}>
+          A referral-only strategic communications firm scaling influence across Africa, the diaspora, and the global stage.
         </p>
-<p className={`text-[#000000] text-sm font-medium`}>Slow loop of Lagos traffic at night → fade to Capitol Hill steps → aerial of Johannesburg skyline
-→ sleek boardroom in Dubai.</p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 mt-2">
- 
 
-<button className="relative overflow-hidden group px-6 py-3 w-fit whitespace-nowrap font-medium text-white bg-[#ff2143] rounded-none shadow">
-  <span className="relative z-10 group-hover:text-black transition duration-300">
-    <Link href="#">For Vetted Partners Only</Link>
-  </span>
-  <span className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
-</button>
+        <p className="text-[#000000] text-xs sm:text-sm font-medium">
+          Slow loop of Lagos traffic at night → fade to Capitol Hill steps → aerial of Johannesburg skyline → sleek boardroom in Dubai.
+        </p>
 
-</div>
-
+        <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          <button className="relative overflow-hidden group px-6 py-3 w-fit font-medium text-white bg-[#ff2143] rounded-none shadow">
+            <span className="relative z-10 group-hover:text-black transition duration-300">
+              <Link href="#">For Vetted Partners Only</Link>
+            </span>
+            <span className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -67,24 +68,12 @@ the global stage.
 
 
 
-
-
-
-
-<section className="pt-20 bg-[#f7f7f7] ">
+<section    className=" bg-[#f7f7f7] px-4 sm:px-6 md:px-12 lg:px-20">
   <div className="bg-[#f7f7f7] w-full justify-center text-center py-20">
     <p className={`text-[#ec5f74] font-semibold ${textclass}`}>What We Do</p>
 <p className={`text-[#092c3f]  font-bold  ${headerclass}`}>We don’t offer services. We shift outcomes.</p>
 
-   
-
-
-
-
-
-
-
-
+ 
 <div className="flex flex-wrap gap-8 max-w-6xl mx-auto pt-20">
   {What_We_Do.map((item, index) => (
     <div
@@ -155,61 +144,23 @@ the global stage.
 </section>
 
 
-<section className=" px-6 py-20 text-center md:text-left bg-[#f7f7f7]  ">
-  <div className="max-w-6xl mx-auto flex gap-6 ">
-  <div className=" w-[35%]">
-    <h2 className={`text-[#092c3f]  font-bold mb-6 ${headerclass}`}>Why Brando?</h2>
-    <p className="text-lg mb-4">We are not like them. We’re not trying to be.</p>
-    <p className="text-lg mb-4">Brando speaks to systems.</p>
-    <p className="text-lg mb-4">They pitch for funding. <span className="font-semibold text-[#ef96a0]">We build legacies.</span></p>
-    <p className="text-lg">They generate buzz. <span className="font-semibold text-[#ef96a0]">We manufacture belief.</span></p>
-  </div>
-  <div className="w-[55%]">
-     <Image src={meeting} alt="chia" className="bg-cover w-full h-auto" />
-
-  </div></div>
-</section>
 
 
 
 
-
-
-
-
-<section className="pt-20 bg-[#f7f7f7]">
-  <div className="max-w-6xl mx-auto ">
-  <div className="  flex  gap-6 ">
-  <div className=" w-[35%]    p-10 space-y-6">
-    
-    <h2  className={`text-[#092c3f]  font-bold flex justify-center items-center gap-2 ${headerclass}`}>
-      🤝 Work With Us
-    </h2>
-
-    <p className="text-gray-700 text-lg">
-      We don’t accept cold pitches. If you're seeing this, someone opened a door.
-    </p>
-
-    <div className="space-y-2">
-      <p className="text-blue-600 text-lg font-medium">
-        → <a href="mailto:referrals@brando.agency" className="underline hover:text-blue-800">
-          referrals@brando.agency
-        </a>
-      </p>
-
-      <p className="text-blue-600 text-lg font-medium">
-        → <a href="/referral-wall" className="underline hover:text-blue-800">
-          Book a private consult
-        </a>
-        <span className="text-sm text-gray-500 ml-1">(link behind referral wall)</span>
-      </p>
+<section className="px-6 py-20 text-center md:text-left bg-[#f7f7f7]">
+  <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
+    <div className="w-full md:w-[45%]">
+      <h2 className={`text-[#092c3f] font-bold mb-6 ${headerclass}`}>Why Brando?</h2>
+      <p className="text-lg mb-4">We are not like them. We’re not trying to be.</p>
+      <p className="text-lg mb-4">Brando speaks to systems.</p>
+      <p className="text-lg mb-4">They pitch for funding. <span className="font-semibold text-[#ef96a0]">We build legacies.</span></p>
+      <p className="text-lg">They generate buzz. <span className="font-semibold text-[#ef96a0]">We manufacture belief.</span></p>
+    </div>
+    <div className="w-full md:w-[55%]">
+      <Image src={meeting} alt="chia" className="w-full h-auto object-cover" />
     </div>
   </div>
-  <div className="w-[55%]">
-    <Image src={workwithus} alt="chia" className="bg-cover  h-auto" />
-  </div>
-</div>
-</div>
 </section>
 
 
@@ -217,7 +168,51 @@ the global stage.
 
 
 
-<section className="pt-20 bg-[#092c3f]">
+
+
+
+<section className="pt-20 bg-[#f7f7f7] px-5 sm:px-0">
+  <div className="max-w-6xl mx-auto px-4 ">
+    <div className="flex flex-col md:flex-row gap-6">
+      {/* Text Content */}
+      <div className="w-full md:basis-1/2 lg:basis-[35%] p-6 md:p-10 space-y-6">
+        <h2 className={`text-[#092c3f] font-bold flex justify-center md:justify-start items-center gap-2 ${headerclass}`}>
+          🤝 Work With Us
+        </h2>
+
+        <p className="text-gray-700 text-lg">
+          We don’t accept cold pitches. If you're seeing this, someone opened a door.
+        </p>
+
+        <div className="space-y-2">
+          <p className="text-blue-600 text-lg font-medium">
+            → <a href="mailto:referrals@brando.agency" className="underline hover:text-blue-800">
+              referrals@brando.agency
+            </a>
+          </p>
+
+          <p className="text-blue-600 text-lg font-medium">
+            → <a href="/referral-wall" className="underline hover:text-blue-800">
+              Book a private consult
+            </a>
+            <span className="text-sm text-gray-500 ml-1">(link behind referral wall)</span>
+          </p>
+        </div>
+      </div>
+
+      {/* Image */}
+      <div className="w-full md:basis-1/2 lg:basis-[55%]">
+        <Image src={workwithus} alt="chia" className="w-full h-auto object-cover" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section className="pt-20 bg-[#092c3f] ">
   <div className=" w-full justify-center text-center ">
     <p  className={`text-[#43121d]  font-bold  ${headerclass}`} >Words We Live By
 
@@ -300,6 +295,7 @@ the global stage.
 
   <p className="text-xs text-gray-400 mt-6">© 2025 Brando Agency. All systems protected.</p>
 </section>
+
 
 
 
