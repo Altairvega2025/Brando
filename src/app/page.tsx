@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import bgimg from '../../public/bgimg.jpg'
+import bgimg from '../../public/microsoft-365-kTFmwxkF5bQ-unsplash (2).jpg'
 import meeting from '../../public/meeting.jpg'
-import workwithus from '../../public/workwithus.jpg'
+import workwithus from '../../public/workwith.jpg'
 import whatwedo from '../../public/whatwedo.jpg'
 import { FaQuoteRight} from "react-icons/fa";
 
-import  {titleClassName,headerclass,What_We_Do, quote,textclass}  from "../app/data";
+import  {titleClassName,headerclass,What_We_Do, quote,textclass,We_work_with}  from "../app/data";
 import { useState,useEffect } from "react";
 import { IoIosArrowRoundBack ,IoIosArrowRoundForward } from "react-icons/io";
 import Footer from "@/components/Footer";
@@ -51,7 +51,7 @@ const handlePrev = () => {
     <Image
       src={bgimg}
       alt="chia"
-      className="w-full h-auto min-h-[130vh] md:min-h-[90vh] object-cover blur-[2px]" 
+      className="w-full h-auto min-h-[140vh] md:h-screen object-cover blur-[2px]" 
     />
 
     <div className="absolute top-1/6 md:top-1/4  left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
@@ -133,21 +133,35 @@ const handlePrev = () => {
         </p>
         <div className="text-[#092c3f] space-y-2       font-medium text-[15.5px] md:text-[17px]">
           <p>We work with:</p>
-          <ul className="list-disc list-inside space-y-1 ml-4">
-            <li>Diaspora-first institutions</li>
-            <li>Municipalities and national agencies</li>
-            <li>FMCG and utility brands expanding across Africa</li>
-            <li>Public figures with purpose</li>
-            <li>Founders scaling across continents</li>
-          </ul>
+     
+
+     <div className="flex flex-wrap gap-4 mt-4">
+  {[
+    'Diaspora-first institutions',
+    'Municipalities and national agencies',
+    'FMCG and utility brands expanding across Africa',
+    'Public figures with purpose',
+    'Founders scaling across continents',
+  ].map((item, index) => (
+    <div
+      key={index}
+      className="bg-white border border-gray-200 shadow-md rounded-lg p-4 w-full sm:w-[48%] lg:w-[30%]"
+    >
+      <p className="text-gray-700 font-medium">{item}</p>
+    </div>
+  ))}
+</div>
+
+      
+
           <p className="mt-4 ">
             If your story shifts the world, we’ll tell it before the world asks.
           </p>
         </div>
-      </div>
+      </div>{/*
       <div className="w-full md:w-[55%]">
       <Image src={whatwedo} alt="chia" className="w-full h-auto object-cover" />
-    </div>
+    </div> */}
       </div>
 </section>
 
@@ -188,14 +202,19 @@ const handlePrev = () => {
 
 
 
+  
 
 
 
+<section className="px-6 py-20 text-center md:text-left bg-[#f7f7f7]">
 
-<section className="pt-20 bg-[#f7f7f7] px-5 sm:px-0">
-  <div className="max-w-6xl mx-auto px-4 ">
-    <div className="flex flex-col md:flex-row gap-6">
-      {/* Text Content */}
+
+   <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
+ 
+      {/* Text Content 
+      
+      <section className="pt-20 bg-[#f7f7f7] px-5 sm:px-0">
+      */}
       <div className="w-full md:w-[45%]  p-6 md:p-10 space-y-6">
         <h2 className={`text-[#092c3f] font-bold flex justify-center md:justify-start items-center gap-2 ${headerclass}`}>
            Work With Us
@@ -227,7 +246,7 @@ const handlePrev = () => {
         
       </div>
     </div>
-  </div>
+ 
 </section>
 
 
@@ -294,13 +313,7 @@ const handlePrev = () => {
 
 
 
-
-
-
-
-
 <Footer/>
-
 
 
 

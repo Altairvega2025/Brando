@@ -48,6 +48,30 @@ export const What_We_Do = [
 
 
 
+export const We_work_with = [
+  {
+    img: "/Testimonials.jpg",
+     icon: <GiSatelliteCommunication size={50} className="text-[#ec5f74]" />,
+    message: "Strategic Communications",
+    name:"Diaspora-first institutions. ",
+  },{img: "/Testimonials.jpg",
+     icon: <FaFileImage size={50} className="text-[#ec5f74]" />,
+    message: "Public Relations & Media Ops",
+    name:"Municipalities and national agencies. ",
+  },{img: "/Testimonials.jpg",
+     icon: <HiMiniIdentification size={50} className="text-[#ec5f74]" />,
+    message: "Omnichannel Branding",
+    name:"FMCG and utility brands expanding across Africa.",
+  },{img: "/Testimonials.jpg",
+     icon: <GiOrganigram size={50} className="text-[#ec5f74]" />,
+    message: "Organizational Systems & Scale Consulting",
+    name:"Public figures with purpose",
+  },{img: "/Testimonials.jpg",
+    icon: <FaPaintBrush size={50} className="text-[#ec5f74]" />,
+    message: "Joint Ventures & Market Expansion",
+    name:"Founders scaling across continents",
+  }]
+
 
   
 export const quote = [
