@@ -37,7 +37,7 @@ export default function Home() {
     <Image
       src={bgimg}
       alt="chia"
-      className="w-full h-auto min-h-[120vh] object-cover blur-[2px]" // Increased image height
+      className="w-full h-auto min-h-[110vh] object-cover blur-[2px]" // Increased image height
     />
 
     <div className="absolute top-1/4 sm:top-1/3 left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
@@ -316,7 +316,7 @@ export default function Home() {
           className="flex flex-col p-4 rounded-xl shadow-md w-full min-w-full"
         >
           <p className={`font-semibold text-[#788e9a] ${textclass}`}>
-            {q.title}
+            {q.title}gfu
           </p>
         </div>
       ))}
