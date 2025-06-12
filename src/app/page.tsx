@@ -51,7 +51,7 @@ const handlePrev = () => {
     <Image
       src={bgimg}
       alt="chia"
-      className="w-full h-auto min-h-[150vh] md:min-h-[90vh] object-cover blur-[2px]" 
+      className="w-full h-auto min-h-[130vh] md:min-h-[90vh] object-cover blur-[2px]" 
     />
 
     <div className="absolute top-1/6 md:top-1/4  left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
