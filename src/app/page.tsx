@@ -37,7 +37,7 @@ export default function Home() {
     <Image
       src={bgimg}
       alt="chia"
-      className="w-full h-auto min-h-[100vh] object-cover blur-[2px]" // Increased image height
+      className="w-full h-auto min-h-[90vh] object-cover blur-[2px]" // Increased image height
     />
 
     <div className="absolute top-1/4 sm:top-1/3 left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
@@ -50,7 +50,7 @@ export default function Home() {
           A referral-only strategic communications firm scaling influence across Africa, the diaspora, and the global stage.
         </p>
 
-        <p className="text-[#ec5f74] text-xs sm:text-sm font-medium">
+        <p className="text-[#ec5f74]  font-medium  text-[16px] md:text-[17px]">
           Slow loop of Lagos traffic at night → fade to Capitol Hill steps → aerial of Johannesburg skyline → sleek boardroom in Dubai.
         </p>
 
