@@ -32,7 +32,7 @@ export default function Home() {
   return (
    <div className="">
 
-<section className="mt-10">
+<section className="mt-0 md:mt-10">
   <div className="relative">
     <Image
       src={bgimg}
@@ -42,20 +42,20 @@ export default function Home() {
 
     <div className="absolute top-1/4 sm:top-1/3 left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
       <div className="flex flex-col gap-6"> {/* Increased gap between elements */}
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-black">
+        <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-black">
           We Don’t Do PR. We Engineer Perception.
         </h1>
 
-        <p className={`text-sm sm:text-base md:text-lg text-black ${textclass}`}>
+        <p className={`text-sm sm:text-base md:text-lg text-[#ec5f74] ${textclass}`}>
           A referral-only strategic communications firm scaling influence across Africa, the diaspora, and the global stage.
         </p>
 
-        <p className="text-[#000000] text-xs sm:text-sm font-medium">
+        <p className="text-[#ec5f74] text-xs sm:text-sm font-medium">
           Slow loop of Lagos traffic at night → fade to Capitol Hill steps → aerial of Johannesburg skyline → sleek boardroom in Dubai.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
-          <button className="relative overflow-hidden group px-6 py-3 w-fit font-medium text-white bg-[#ff2143] rounded-none shadow">
+          <button className="relative overflow-hidden group px-6 py-3 w-fit font-medium text-white bg-[#ff2143] rounded shadow">
             <span className="relative z-10 group-hover:text-black transition duration-300">
               <Link href="#">For Vetted Partners Only</Link>
             </span>
@@ -92,7 +92,7 @@ export default function Home() {
           <p className={`text-[#1c1663] group-hover:text-white transition-colors duration-300 ${titleClassName}`}>
             {item.message}
           </p>
-          <p className={`text-[#9189a4] font-medium text-[17px] group-hover:text-white transition-colors duration-300 ${textclass}`}>
+          <p className={`text-[#9189a4] font-medium  group-hover:text-white transition-colors duration-300 ${textclass}`}>
             {item.name}
           </p>
         </div>
@@ -112,10 +112,10 @@ export default function Home() {
 <section className="px-6 py-16  space-y-20 bg-[#f7f7f7]">
    <div className="space-y-6  max-w-6xl mx-auto">
         <h2 className={`text-[#092c3f]  font-bold  ${headerclass}`}>Who We Work With</h2>
-        <p className="text-lg text-[#ec5f74] italic">
+        <p className={`text-[#ec5f74] ${textclass}`} >
           Selective. Sovereign. Scale-driven.
         </p>
-        <div className="text-[#092c3f] text-base space-y-2">
+        <div className="text-[#092c3f] space-y-2       font-medium text-[15.5px] md:text-[17px]">
           <p>We work with:</p>
           <ul className="list-disc list-inside space-y-1 ml-4">
             <li>Diaspora-first institutions</li>
@@ -124,7 +124,7 @@ export default function Home() {
             <li>Public figures with purpose</li>
             <li>Founders scaling across continents</li>
           </ul>
-          <p className="mt-4 text-lg font-medium">
+          <p className="mt-4 ">
             If your story shifts the world, we’ll tell it before the world asks.
           </p>
         </div>
@@ -135,7 +135,7 @@ export default function Home() {
 <section className="bg-[#f7f7f7] text-black px-6 py-20 text-center">
   <div className="max-w-4xl mx-auto">
     <h2 className={`text-[#092c3f]  font-bold mb-4  ${headerclass}`}>Our Presence</h2>
-    <p className="text-lg mb-2 font-medium text-[#ec5f74]">
+    <p className="text-lg mb-2 font-medium text-[#ec5f74] text-[15.5px] md:text-[17px]">
       Chicago &nbsp;|&nbsp; Lagos &nbsp;|&nbsp; Accra &nbsp;|&nbsp; London &nbsp;|&nbsp; Dubai &nbsp;|&nbsp; Japan
     </p>
     <p className={`mt-4 ${textclass}`}>
@@ -153,10 +153,10 @@ export default function Home() {
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
     <div className="w-full md:w-[45%]">
       <h2 className={`text-[#092c3f] font-bold mb-6 ${headerclass}`}>Why Brando?</h2>
-      <p className="text-lg mb-4">We are not like them. We’re not trying to be.</p>
-      <p className="text-lg mb-4">Brando speaks to systems.</p>
-      <p className="text-lg mb-4">They pitch for funding. <span className="font-semibold text-[#ec5f74]">We build legacies.</span></p>
-      <p className="text-lg">They generate buzz. <span className="font-semibold text-[#ec5f74]">We manufacture belief.</span></p>
+      <p className=" font-medium text-[15.5px] md:text-[17px]      mb-4">We are not like them. We’re not trying to be.</p>
+      <p className="font-medium text-[15.5px] md:text-[17px] mb-4">Brando speaks to systems.</p>
+      <p className="font-medium text-[15.5px] md:text-[17px] mb-4">They pitch for funding. <span className="font-semibold text-[#ec5f74]">We build legacies.</span></p>
+      <p className="font-medium text-[15.5px] md:text-[17px]">They generate buzz. <span className="font-semibold text-[#ec5f74]">We manufacture belief.</span></p>
     </div>
     <div className="w-full md:w-[55%]">
       <Image src={meeting} alt="chia" className="w-full h-auto object-cover" />
@@ -181,11 +181,11 @@ export default function Home() {
            Work With Us
         </h2>
 
-        <p className="text-gray-700 text-lg">
+        <p className={`text-black ${textclass}`}>
           We don’t accept cold pitches. If you're seeing this, someone opened a door.
         </p>
 
-        <div className="space-y-2">
+        <div className="space-y-2 ">
           <p className="text-blue-600 text-lg font-medium">
             → <Link href="#" className="underline hover:text-blue-800">
               referrals@brando.agency
@@ -202,8 +202,9 @@ export default function Home() {
       </div>
 
       {/* Image */}
-      <div className="w-full md:basis-1/2 lg:basis-[55%]">
+      <div className="w-full md:w-[55%]">
         <Image src={workwithus} alt="chia" className="w-full h-auto object-cover" />
+        
       </div>
     </div>
   </div>
@@ -266,6 +267,73 @@ export default function Home() {
 
 
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className="flex flex-col sm:flex-row pt-20 w-full justify-between items-center">
+  {/* Prev Button - Hidden on mobile */}
+  <div className="hidden sm:flex mt-6 border border-black">
+    <button
+      onClick={handlePrev}
+      className="p-2 rounded-full hover:bg-gray-300"
+    >
+      <IoIosArrowRoundBack size="40" />
+    </button>
+  </div>
+
+  {/* Title Slider */}
+  <div className="relative w-full max-w-xl overflow-x-hidden scrollbar-hide">
+    <div
+      className="flex transition-transform duration-500 ease-in-out"
+      style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+    >
+      {quote.map((q, index) => (
+        <div
+          key={index}
+          className="flex flex-col p-4 rounded-xl shadow-md w-full min-w-full"
+        >
+          <p className={`font-semibold text-[#788e9a] ${textclass}`}>
+            {q.title}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Next Button - Hidden on mobile */}
+  <div className="hidden sm:flex justify-center gap-4 mt-6 border border-black">
+    <button
+      onClick={handleNext}
+      className="p-2 hover:bg-gray-300"
+    >
+      <IoIosArrowRoundForward size="40" />
+    </button>
+  </div>
+</div>
+
 
 <Footer/>
 

@@ -8,9 +8,9 @@ import { HiMiniIdentification} from "react-icons/hi2";
 
 import { MdPolicy} from "react-icons/md";
 
-export const titleClassName = "font-semibold text-[18px]";
-export const headerclass="font-bold text-[34px]  text-[#092c3f]"
-export const textclass="text-[#9189a4] font-medium text-[17px]"
+export const titleClassName = "font-semibold text-[21px]";
+export const headerclass="font-bold text-[30px] md:text-[34px] text-[#092c3f]"
+export const textclass="text-[#9189a4] font-medium text-[15.5px] md:text-[17px]"
 
 
 export const our_order = [
