@@ -8,16 +8,19 @@ import whatwedo from '../../public/whatwedo.jpg'
 import { FaQuoteRight} from "react-icons/fa";
 
 import  {titleClassName,headerclass,What_We_Do, quote,textclass}  from "../app/data";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { IoIosArrowRoundBack ,IoIosArrowRoundForward } from "react-icons/io";
 import Footer from "@/components/Footer";
 
 
 export default function Home() {
 
+  
+
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handlePrev = () => {
+const handlePrev = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? quote.length - 1 : prevIndex - 1
     );
@@ -28,6 +31,18 @@ export default function Home() {
       prevIndex === quote.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  // Auto slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    }, 5000); // 5 seconds
+
+    return () => clearInterval(interval); // cleanup
+  }, [quote.length]);
+
+
+
   return (
    <div className="">
 
@@ -230,45 +245,63 @@ export default function Home() {
 
 
 
-<div className="flex  pt-20 w-full  justify-between items-center  ">
-  <div className="flex mt-6 border-1 border-black">
-       
-   <button
-          onClick={handlePrev}
-          className="p-2  rounded-full hover:bg-gray-300"
+
+
+
+<div className="flex flex-col sm:flex-row pt-20 w-full justify-between items-center">
+      {/* Title Slider */}
+      <div className="hidden sm:flex mt-6 border border-black">
+    <button
+      onClick={handlePrev}
+      className="p-2 rounded-full hover:bg-gray-300"
+    >
+      <IoIosArrowRoundBack size="40" />
+    </button>
+  </div>
+
+      <div className="relative w-full max-w-xl overflow-hidden scrollbar-hide">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          <IoIosArrowRoundBack size="40"/>
-        </button></div>
-      <div className="relative w-full max-w-xl overflow-hidden">
-        {/* Quote Slide */}
-        <div className="flex transition-transform duration-500 ease-in-out w-full">
-          <div
-            key={currentIndex}
-            className="flex flex-col  p-4 rounded-xl shadow-md w-full "
-          >
-            <p className={`font-semibold text-[#788e9a] ${textclass}`}>
-              {quote[currentIndex].title}
-            </p>
-          </div>
+          {quote.map((q, index) => (
+            <div
+              key={index}
+              className="flex flex-col p-4 rounded-xl shadow-md w-full min-w-full"
+            >
+              <p className={`font-semibold text-[#788e9a] ${textclass}`}>
+                {q.title}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Navigation Arrows */}
-      <div className="flex justify-center gap-4 mt-6 border-1 border-black">
-       
-        <button
-          onClick={handleNext}
-          className="p-2  hover:bg-gray-300"
-        >
-          <IoIosArrowRoundForward size="40" />
-        </button>
-      </div>
+      <div className="hidden sm:flex justify-center gap-4 mt-6 border border-white">
+    <button
+      onClick={handleNext}
+      className="p-2 hover:bg-gray-300"
+    >
+      <IoIosArrowRoundForward size="40" />
+    </button>
+  </div>
     </div>
 
 
 
-  </div>
 
+
+
+
+
+
+
+
+
+
+
+
+  </div>
 
 
 </section>
@@ -280,67 +313,10 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div className="flex flex-col sm:flex-row pt-20 w-full justify-between items-center">
-  {/* Prev Button - Hidden on mobile */}
-  <div className="hidden sm:flex mt-6 border border-black">
-    <button
-      onClick={handlePrev}
-      className="p-2 rounded-full hover:bg-gray-300"
-    >
-      <IoIosArrowRoundBack size="40" />
-    </button>
-  </div>
-
-  {/* Title Slider */}
-  <div className="relative w-full max-w-xl overflow-hidden">
-    <div
-      className="flex transition-transform duration-500 ease-in-out"
-      style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-    >
-      {quote.map((q, index) => (
-        <div
-          key={index}
-          className="flex-shrink-0 flex flex-col p-4 rounded-xl shadow-md w-full min-w-full"
-        >
-          <p className={`font-semibold text-[#788e9a] ${textclass}`}>
-            {q.title}uy
-          </p>
-        </div>
-      ))}
-    </div>
-  </div>
-
-  {/* Next Button - Hidden on mobile */}
-  <div className="hidden sm:flex justify-center gap-4 mt-6 border border-black">
-    <button
-      onClick={handleNext}
-      className="p-2 hover:bg-gray-300"
-    >
-      <IoIosArrowRoundForward size="40" />
-    </button>
-  </div>
-</div>
-
-
-
 <Footer/>
+
+
+
 
 </div>
   );
