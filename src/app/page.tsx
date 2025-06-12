@@ -253,7 +253,7 @@ const handlePrev = () => {
 
 
 
-<section className="pt-20 bg-[#092c3f] mt-20 ">
+<section className="pt-20 bg-[#092c3f]  ">
   <div className=" w-full justify-center text-center ">
     <p  className={`text-[#43121d]  font-bold  ${headerclass}`} >Words We Live By
 
