@@ -4,10 +4,10 @@ import Link from "next/link";
 import bgimg from '../../public/bgimg.jpg'
 import meeting from '../../public/meeting.jpg'
 import workwithus from '../../public/workwithus.jpg'
-import footer_bg from '../../public/footer_bg.jpg'
-import { FaLinkedinIn,FaQuoteRight,} from "react-icons/fa";
-import { SiNotion } from "react-icons/si";
-import  {titleClassName,headerclass,our_order,What_We_Do, quote,textclass}  from "../app/data";
+import whatwedo from '../../public/whatwedo.jpg'
+import { FaQuoteRight} from "react-icons/fa";
+
+import  {titleClassName,headerclass,What_We_Do, quote,textclass}  from "../app/data";
 import { useState } from "react";
 import { IoIosArrowRoundBack ,IoIosArrowRoundForward } from "react-icons/io";
 import Footer from "@/components/Footer";
@@ -28,7 +28,6 @@ export default function Home() {
       prevIndex === quote.length - 1 ? 0 : prevIndex + 1
     );
   };
-
   return (
    <div className="">
 
@@ -42,7 +41,7 @@ export default function Home() {
 
     <div className="absolute top-1/4 sm:top-1/3 left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
       <div className="flex flex-col gap-6"> {/* Increased gap between elements */}
-        <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-black">
+        <h1 className="text-[40px] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-black">
           We Don’t Do PR. We Engineer Perception.
         </h1>
 
@@ -110,6 +109,8 @@ export default function Home() {
 </section>
 
 <section className="px-6 py-16  space-y-20 bg-[#f7f7f7]">
+   <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
+ 
    <div className="space-y-6  max-w-6xl mx-auto">
         <h2 className={`text-[#092c3f]  font-bold  ${headerclass}`}>Who We Work With</h2>
         <p className={`text-[#ec5f74] ${textclass}`} >
@@ -128,6 +129,10 @@ export default function Home() {
             If your story shifts the world, we’ll tell it before the world asks.
           </p>
         </div>
+      </div>
+      <div className="w-full md:w-[55%]">
+      <Image src={whatwedo} alt="chia" className="w-full h-auto object-cover" />
+    </div>
       </div>
 </section>
 
@@ -292,7 +297,6 @@ export default function Home() {
 
 
 
-
 <div className="flex flex-col sm:flex-row pt-20 w-full justify-between items-center">
   {/* Prev Button - Hidden on mobile */}
   <div className="hidden sm:flex mt-6 border border-black">
@@ -305,7 +309,7 @@ export default function Home() {
   </div>
 
   {/* Title Slider */}
-  <div className="relative w-full max-w-xl overflow-x-hidden scrollbar-hide">
+  <div className="relative w-full max-w-xl overflow-hidden">
     <div
       className="flex transition-transform duration-500 ease-in-out"
       style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -313,10 +317,10 @@ export default function Home() {
       {quote.map((q, index) => (
         <div
           key={index}
-          className="flex flex-col p-4 rounded-xl shadow-md w-full min-w-full"
+          className="flex-shrink-0 flex flex-col p-4 rounded-xl shadow-md w-full min-w-full"
         >
           <p className={`font-semibold text-[#788e9a] ${textclass}`}>
-            {q.title}gfu
+            {q.title}uy
           </p>
         </div>
       ))}
@@ -335,8 +339,9 @@ export default function Home() {
 </div>
 
 
+
 <Footer/>
 
-   </div>
+</div>
   );
 }

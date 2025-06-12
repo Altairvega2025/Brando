@@ -10,36 +10,9 @@ import { MdPolicy} from "react-icons/md";
 
 export const titleClassName = "font-semibold text-[21px]";
 export const headerclass="font-bold text-[30px] md:text-[34px] text-[#092c3f]"
-export const textclass="text-[#9189a4] font-medium text-[20px] "
+export const textclass="text-[#9189a4] font-medium text-[18px] "
 
 
-export const our_order = [
-  {
-    img: "/sandwich.jpg",
-    message: "Rainbow Vegetable Sandwich",
-    time: "Time: 15 - 20 Minutes | Serves: 1",
-    price1:"$10.50 ",
-    price2:" $11.70",
-    order: "Order Now"
-  },
-  {
-    img: "/tacos.jpg",
-    message: "Vegetarian Burger",
-    time: "Time: 30 - 45 Minutes | Serves: 1",
-     price1:"$9.20",
-      price2:"$10.50",
-    order: "Order Now"
-  },
-  {
-    img: "/strawberry.jpg",
-    message: "Raspberry Stuffed French Toast",
-    time: "Time: 10 - 15 Minutes | Serves: 1",
-     price1:"$12.50 ",
-     price2:" $13.20",
-    order: "Order Now"
-  }
- 
-];
 
 
 
@@ -92,10 +65,3 @@ export const quote = [
 
 
 
-
-export const socialm = [
-  {
-    img: "/Testimonials.jpg",
-  },{
-
-  }]
