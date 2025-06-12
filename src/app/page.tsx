@@ -196,7 +196,7 @@ const handlePrev = () => {
   <div className="max-w-6xl mx-auto px-4 ">
     <div className="flex flex-col md:flex-row gap-6">
       {/* Text Content */}
-      <div className="w-full md:basis-1/2 lg:basis-[35%] p-6 md:p-10 space-y-6">
+      <div className="w-full md:w-[45%]  p-6 md:p-10 space-y-6">
         <h2 className={`text-[#092c3f] font-bold flex justify-center md:justify-start items-center gap-2 ${headerclass}`}>
            Work With Us
         </h2>
@@ -206,13 +206,13 @@ const handlePrev = () => {
         </p>
 
         <div className="space-y-2 ">
-          <p className="text-blue-600 text-lg font-medium">
+          <p className="text-[#ec5f74] text-lg font-medium">
             → <Link href="#" className="underline hover:text-blue-800">
               referrals@brando.agency
             </Link>
           </p>
 
-          <p className="text-blue-600 text-lg font-medium">
+          <p className="text-[#ec5f74] text-lg font-medium">
             → <Link href="#" className="underline hover:text-blue-800">
               Book a private consult
             </Link>
