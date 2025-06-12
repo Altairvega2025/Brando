@@ -64,7 +64,7 @@ const handlePrev = () => {
           A referral-only strategic communications firm scaling influence across Africa, the diaspora, and the global stage.
         </p>
 
-        <p className="text-[#ec5f74]  font-medium  text-[16px] md:text-[17px]">
+        <p className="text-black  font-medium  text-[18px] ">
           Slow loop of Lagos traffic at night → fade to Capitol Hill steps → aerial of Johannesburg skyline → sleek boardroom in Dubai.
         </p>
 
@@ -248,16 +248,9 @@ const handlePrev = () => {
 
 
 
-<div className="flex flex-col sm:flex-row pt-20 w-full justify-between items-center">
+<div className="flex flex-col sm:flex-row pt-20 w-full justify-center items-center">
       {/* Title Slider */}
-      <div className="hidden sm:flex mt-6 border border-black">
-    <button
-      onClick={handlePrev}
-      className="p-2 rounded-full hover:bg-gray-300"
-    >
-      <IoIosArrowRoundBack size="40" />
-    </button>
-  </div>
+      
 
       <div className="relative w-full max-w-xl overflow-hidden scrollbar-hide">
         <div
@@ -277,14 +270,7 @@ const handlePrev = () => {
         </div>
       </div>
 
-      <div className="hidden sm:flex justify-center gap-4 mt-6 border border-black">
-    <button
-      onClick={handleNext}
-      className="p-2 hover:bg-gray-300"
-    >
-      <IoIosArrowRoundForward size="40" />
-    </button>
-  </div>
+      
     </div>
 
 
