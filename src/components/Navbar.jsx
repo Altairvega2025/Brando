@@ -12,8 +12,8 @@ const Navbar = () => {
   return (
     
     <div className="fixed  top-0 left-0 z-50 w-full bg-white">
-    <nav className="flex  justify-between  bg-white    mx-auto  items-center max-w-6xl w-full">
-     
+    <nav className="flex justify-between bg-white mx-auto items-center max-w-6xl w-full px-4 py-4 md:px-0 md:py-0">
+
      
       {/* Logo 
       
@@ -34,7 +34,7 @@ const Navbar = () => {
    
 
        {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="md:hidden  pr-8">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <RxHamburgerMenu size={25} color="white" /> :<RxHamburgerMenu size={25} color="black" />}
           </button>

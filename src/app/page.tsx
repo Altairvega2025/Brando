@@ -10,6 +10,7 @@ import { SiNotion } from "react-icons/si";
 import  {titleClassName,headerclass,our_order,What_We_Do, quote,textclass}  from "../app/data";
 import { useState } from "react";
 import { IoIosArrowRoundBack ,IoIosArrowRoundForward } from "react-icons/io";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
   return (
    <div className="">
 
-<section className="mt-20">
+<section className="mt-10">
   <div className="relative">
     <Image
       src={bgimg}
@@ -68,7 +69,7 @@ export default function Home() {
 
 
 
-<section    className=" bg-[#f7f7f7] px-4 sm:px-6 md:px-12 lg:px-20">
+<section    className=" bg-[#f7f7f7] px-4 sm:px-6 md:px-12 lg:px-20 ">
   <div className="bg-[#f7f7f7] w-full justify-center text-center py-20">
     <p className={`text-[#ec5f74] font-semibold ${textclass}`}>What We Do</p>
 <p className={`text-[#092c3f]  font-bold  ${headerclass}`}>We don’t offer services. We shift outcomes.</p>
@@ -154,8 +155,8 @@ export default function Home() {
       <h2 className={`text-[#092c3f] font-bold mb-6 ${headerclass}`}>Why Brando?</h2>
       <p className="text-lg mb-4">We are not like them. We’re not trying to be.</p>
       <p className="text-lg mb-4">Brando speaks to systems.</p>
-      <p className="text-lg mb-4">They pitch for funding. <span className="font-semibold text-[#ef96a0]">We build legacies.</span></p>
-      <p className="text-lg">They generate buzz. <span className="font-semibold text-[#ef96a0]">We manufacture belief.</span></p>
+      <p className="text-lg mb-4">They pitch for funding. <span className="font-semibold text-[#ec5f74]">We build legacies.</span></p>
+      <p className="text-lg">They generate buzz. <span className="font-semibold text-[#ec5f74]">We manufacture belief.</span></p>
     </div>
     <div className="w-full md:w-[55%]">
       <Image src={meeting} alt="chia" className="w-full h-auto object-cover" />
@@ -177,7 +178,7 @@ export default function Home() {
       {/* Text Content */}
       <div className="w-full md:basis-1/2 lg:basis-[35%] p-6 md:p-10 space-y-6">
         <h2 className={`text-[#092c3f] font-bold flex justify-center md:justify-start items-center gap-2 ${headerclass}`}>
-          🤝 Work With Us
+           Work With Us
         </h2>
 
         <p className="text-gray-700 text-lg">
@@ -186,15 +187,15 @@ export default function Home() {
 
         <div className="space-y-2">
           <p className="text-blue-600 text-lg font-medium">
-            → <a href="mailto:referrals@brando.agency" className="underline hover:text-blue-800">
+            → <Link href="#" className="underline hover:text-blue-800">
               referrals@brando.agency
-            </a>
+            </Link>
           </p>
 
           <p className="text-blue-600 text-lg font-medium">
-            → <a href="/referral-wall" className="underline hover:text-blue-800">
+            → <Link href="#" className="underline hover:text-blue-800">
               Book a private consult
-            </a>
+            </Link>
             <span className="text-sm text-gray-500 ml-1">(link behind referral wall)</span>
           </p>
         </div>
@@ -212,7 +213,7 @@ export default function Home() {
 
 
 
-<section className="pt-20 bg-[#092c3f] ">
+<section className="pt-20 bg-[#092c3f] mt-20 ">
   <div className=" w-full justify-center text-center ">
     <p  className={`text-[#43121d]  font-bold  ${headerclass}`} >Words We Live By
 
@@ -264,40 +265,9 @@ export default function Home() {
 
 
 
-
-
-
-
-
-
-
 </section>
 
-
-
-
-
-
-
-
-<section className="relative    py-12  text-center space-y-4">
-
-  <p className="text-lg font-semibold mt-6">
-    Brando & Associates · Est. Globally · Black-Owned · System-Built
-  </p>
-
-  {/* Links */}
-  <div className="flex justify-center gap-6 mt-2 text-sm underline">
-    <a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={20} color="white" /></a>
-    <a href="#" target="_blank" rel="noopener noreferrer"><SiNotion color="white" /></a>
-    <a href="#" target="_blank" rel="noopener noreferrer">Media Kit Access – Password Only</a>
-  </div>
-
-  <p className="text-xs text-gray-400 mt-6">© 2025 Brando Agency. All systems protected.</p>
-</section>
-
-
-
+<Footer/>
 
    </div>
   );
