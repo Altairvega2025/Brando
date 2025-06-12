@@ -56,11 +56,11 @@ const handlePrev = () => {
 
     <div className="absolute top-1/4 sm:top-1/3 left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
       <div className="flex flex-col gap-6"> {/* Increased gap between elements */}
-        <h1 className="text-[40px] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug text-black">
+        <h1 className="text-[40px] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug  text-[#ec5f74]">
           We Don’t Do PR. We Engineer Perception.
         </h1>
 
-        <p className={`text-sm sm:text-base md:text-lg text-[#ec5f74] ${textclass}`}>
+        <p className={`text-sm sm:text-base md:text-lg text-black ${textclass}`}>
           A referral-only strategic communications firm scaling influence across Africa, the diaspora, and the global stage.
         </p>
 
@@ -277,7 +277,7 @@ const handlePrev = () => {
         </div>
       </div>
 
-      <div className="hidden sm:flex justify-center gap-4 mt-6 border border-white">
+      <div className="hidden sm:flex justify-center gap-4 mt-6 border border-black">
     <button
       onClick={handleNext}
       className="p-2 hover:bg-gray-300"

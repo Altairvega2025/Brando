@@ -15,9 +15,9 @@ export default function Footer() {
   </p>
 
   {/* Links */}
-  <div className="flex justify-center gap-6 mt-2 text-sm underline">
-    <Link href="#" target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={20} color="white" /></Link>
-    <Link href="#" target="_blank" rel="noopener noreferrer"><SiNotion color="white" /></Link>
+  <div className="flex justify-center gap-2 mt-2 text-sm underline">
+    <Link href="#" target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={20} color="black" /></Link>
+    <Link href="#" target="_blank" rel="noopener noreferrer"><SiNotion size={20} color="black" /></Link>
     <Link href="#" target="_blank" rel="noopener noreferrer">Media Kit Access – Password Only</Link>
   </div>
 
