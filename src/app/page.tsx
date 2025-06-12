@@ -51,10 +51,10 @@ const handlePrev = () => {
     <Image
       src={bgimg}
       alt="chia"
-      className="w-full h-auto min-h-[150vh] md:min-h-[90vh] object-cover blur-[2px]" // Increased image height
+      className="w-full h-auto min-h-[150vh] md:min-h-[90vh] object-cover blur-[2px]" 
     />
 
-    <div className="absolute top-16 md:top-1/4  left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
+    <div className="absolute top-1/6 md:top-1/4  left-4 sm:left-8 md:left-16 max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-2xl p-4 sm:p-6">
       <div className="flex flex-col gap-6"> {/* Increased gap between elements */}
         <h1 className="text-[40px] sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-snug  text-[#ec5f74]">
           We Don’t Do PR. We Engineer Perception.
