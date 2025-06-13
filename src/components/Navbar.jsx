@@ -39,7 +39,7 @@ const Navbar = () => {
        {/* Mobile Hamburger */}
         <div className="md:hidden  pr-8">
           <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? <p className="font-bold">X</p> :<RxHamburgerMenu size={25} color="black" />}
+            {isOpen ? <p className="font-bold text-black">X</p> :<RxHamburgerMenu size={25} color="black" />}
           </button>
         </div>
     </nav>

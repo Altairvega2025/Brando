@@ -2,7 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import bgimg from '../../public/microsoft-365-kTFmwxkF5bQ-unsplash (2).jpg'
-import meeting from '../../public/meeting.jpg'
+import meeting from '../../public/sebastian-herrmann-NbtIDoFKGO8-unsplash.jpg'
 import workwithus from '../../public/workwith.jpg'
 import whatwedo from '../../public/whatwedo.jpg'
 import { FaQuoteRight} from "react-icons/fa";
@@ -211,10 +211,7 @@ const handlePrev = () => {
 
    <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
  
-      {/* Text Content 
       
-      <section className="pt-20 bg-[#f7f7f7] px-5 sm:px-0">
-      */}
       <div className="w-full md:w-[45%]  p-6 md:p-10 space-y-6">
         <h2 className={`text-[#092c3f] font-bold flex justify-center md:justify-start items-center gap-2 ${headerclass}`}>
            Work With Us
