@@ -252,7 +252,7 @@ const handlePrev = () => {
   <div className=" w-full justify-center text-center ">
     <p  className={`text-[#fff]  font-bold  ${headerclass}`} >Words We Live By</p>
 <div className="flex justify-center items-center mt-6">
-<FaQuoteRight color=" #f04e3c" size="55" /> </div>
+<FaQuoteRight color=" #ec5f74" size="55" /> </div>
    
 
 <div className="flex flex-col sm:flex-row pt-20 w-full justify-center items-center">
