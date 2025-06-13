@@ -247,7 +247,7 @@ const handlePrev = () => {
 
 
 
-<section className="py-20    bg-gradient-to-b from-[#092c3f] to-[#0b3a4e]
+<section className="pt-20 pb-10   bg-gradient-to-b from-[#092c3f] to-[#0b3a4e]
 ">
   <div className=" w-full justify-center text-center ">
     <p  className={`text-[#fff]  font-bold  ${headerclass}`} >Words We Live By</p>
@@ -255,15 +255,9 @@ const handlePrev = () => {
 <FaQuoteRight color=" #f04e3c" size="55" /> </div>
    
 
-
-
-
-
-
 <div className="flex flex-col sm:flex-row pt-20 w-full justify-center items-center">
       {/* Title Slider */}
       
-
       <div className="relative w-full max-w-xl overflow-hidden scrollbar-hide">
         <div
           className="flex transition-transform duration-500 ease-in-out"
@@ -284,7 +278,6 @@ const handlePrev = () => {
 
       
     </div>
-
 
 
   </div>
