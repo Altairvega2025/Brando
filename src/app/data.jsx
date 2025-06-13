@@ -51,7 +51,7 @@ export const What_We_Do = [
 export const We_work_with = [
   {
     img: "/Testimonials.jpg",
-     icon: <GiSatelliteCommunication size={50} className="text-[#ec5f74]" />,
+     icon: <GiSatelliteCommunication size={50} className="text-[#ec5f74] " />,
     message: "Strategic Communications",
     name:"Diaspora-first institutions. ",
   },{img: "/Testimonials.jpg",

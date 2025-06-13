@@ -187,10 +187,10 @@ const handlePrev = () => {
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
     <div className="w-full md:w-[45%]">
       <h2 className={`text-[#092c3f] font-bold mb-6 ${headerclass}`}>Why Brando?</h2>
-      <p className=" font-medium text-[15.5px] md:text-[17px]      mb-4">We are not like them. We’re not trying to be.</p>
-      <p className="font-medium text-[15.5px] md:text-[17px] mb-4">Brando speaks to systems.</p>
-      <p className="font-medium text-[15.5px] md:text-[17px] mb-4">They pitch for funding. <span className="font-semibold text-[#ec5f74]">We build legacies.</span></p>
-      <p className="font-medium text-[15.5px] md:text-[17px]">They generate buzz. <span className="font-semibold text-[#ec5f74]">We manufacture belief.</span></p>
+      <p className=" font-medium text-[15.5px] md:text-[17px]  text-[#092c3f]   mb-4">We are not like them. We’re not trying to be.</p>
+      <p className="font-medium text-[15.5px] md:text-[17px] text-[#092c3f] mb-4">Brando speaks to systems.</p>
+      <p className="font-medium text-[15.5px] md:text-[17px] text-[#092c3f] mb-4">They pitch for funding. <span className="font-semibold text-[#ec5f74]">We build legacies.</span></p>
+      <p className="font-medium text-[15.5px] md:text-[17px] text-[#092c3f] ">They generate buzz. <span className="font-semibold text-[#ec5f74]">We manufacture belief.</span></p>
     </div>
     <div className="w-full md:w-[55%]">
       <Image src={meeting} alt="chia" className="w-full h-auto object-cover" />
@@ -253,7 +253,7 @@ const handlePrev = () => {
 
 
 
-<section className="pt-20 bg-[#092c3f]  ">
+<section className="pt-20 bg-[#092c3f] ">
   <div className=" w-full justify-center text-center ">
     <p  className={`text-[#43121d]  font-bold  ${headerclass}`} >Words We Live By
 
