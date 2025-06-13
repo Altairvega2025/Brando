@@ -247,13 +247,12 @@ const handlePrev = () => {
 
 
 
-<section className="pt-20  bg-[#092c3f] ">
+<section className="py-20    bg-gradient-to-b from-[#092c3f] to-[#0b3a4e]
+">
   <div className=" w-full justify-center text-center ">
-    <p  className={`text-[#43121d]  font-bold  ${headerclass}`} >Words We Live By
-
-</p>
+    <p  className={`text-[#fff]  font-bold  ${headerclass}`} >Words We Live By</p>
 <div className="flex justify-center items-center mt-6">
-<FaQuoteRight color="#f04e3c" size="55" /> </div>
+<FaQuoteRight color=" #f04e3c" size="55" /> </div>
    
 
 
@@ -275,7 +274,7 @@ const handlePrev = () => {
               key={index}
               className="flex flex-col p-4 rounded-xl shadow-md w-full min-w-full"
             >
-              <p className={`font-semibold text-[#788e9a] ${textclass}`}>
+              <p className={`font-semibold text-[#fff] ${textclass}`}>
                 {q.title}
               </p>
             </div>
@@ -285,18 +284,6 @@ const handlePrev = () => {
 
       
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

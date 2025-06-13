@@ -79,7 +79,7 @@ export const quote = [
     title:" There’s always a diplomatic method to stabilizing chaos.",
     
   },{
-    title:"We don’t scale noise. We scale nations.”",
+    title:"We don’t scale noise. We scale nations.",
      },
   {
     title:" Influence isn’t loud. It’s aligned.",
