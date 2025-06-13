@@ -163,7 +163,7 @@ const handlePrev = () => {
 </section>
 
 
-<section className="bg-[#f7f7f7] text-black px-6 py-14 md:py-20 text-center">
+<section className="bg-[#f7f7f7] text-black px-6 py-20 text-center">
   <div className="max-w-4xl mx-auto">
     <h2 className={`text-[#092c3f]  font-bold mb-4  ${headerclass}`}>Our Presence</h2>
     <p className="text-lg mb-2 font-medium text-[#ec5f74] text-[15.5px] md:text-[17px]">
@@ -180,7 +180,7 @@ const handlePrev = () => {
 
 
 
-<section className="px-6 sm:px-6 md:px-12 lg:px-20 py-10 md:py-20 text-center md:text-left bg-[#f7f7f7]">
+<section className="px-6 sm:px-6 md:px-12 lg:px-20 py-20 text-center md:text-left bg-[#f7f7f7]">
   <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
     <div className="w-full md:w-[45%]">
       <h2 className={`text-[#092c3f] font-bold mb-6 ${headerclass}`}>Why Brando?</h2>
@@ -203,7 +203,7 @@ const handlePrev = () => {
 
 
 
-<section className="px-6 py-20 md:py-20  text-center md:text-left bg-[#f7f7f7]">
+<section className="px-6 py-20   text-center md:text-left bg-[#f7f7f7]">
 
 
    <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
