@@ -7,6 +7,7 @@ import workwithus from '../../public/workwith.jpg'
 import { FaQuoteRight} from "react-icons/fa";
 import  {titleClassName,headerclass,What_We_Do, quote,textclass,We_work_with}  from "../app/data";
 import { useState,useEffect } from "react";
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -284,6 +285,9 @@ const handlePrev = () => {
 
 </section>
 
+
+
+<Footer/>
 
 
 
