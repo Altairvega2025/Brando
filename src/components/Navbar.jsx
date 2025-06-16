@@ -29,10 +29,10 @@ const Navbar = () => {
       {/* Navigation Links     rgb(255, 255, 255) */}
       <ul className=" space-x-6 text-[text-[#163546]] font-semibold  hidden md:flex ">
         <li><Link href="#" className="hover:text-[#343a40] ">Home</Link></li>
-        <li><Link href="#" className="hover:text-[#343a40]">About</Link></li>
-        <li><Link href="#" className="hover:text-[#343a40]">Services</Link></li>
-        <li><Link href="#" className="hover:text-[#343a40]">Blog</Link></li>
-        <li><Link href="#" className="hover:text-[#343a40]">Contacts</Link></li>
+        <li><Link href="/about" className="hover:text-[#343a40]">About</Link></li>
+        <li><Link href="/services" className="hover:text-[#343a40]">Services</Link></li>
+        <li><Link href="/blog" className="hover:text-[#343a40]">Blog</Link></li>
+        <li><Link href="/contacts" className="hover:text-[#343a40]">Contacts</Link></li>
             </ul>
    
 
@@ -52,10 +52,10 @@ const Navbar = () => {
       {isOpen && (
         <ul className="md:hidden flex flex-col space-y-4 px-6 pb-4  font-semibold bg-white">
           <li><Link href="#" className="hover:text-white text-[#163546]">Home</Link></li>
-          <li><Link href="#" className="hover:text-[#343a40] text-[#343a40]">About</Link></li>
-          <li><Link href="#" className="hover:text-[#343a40] text-[#343a40]">Services</Link></li>
-          <li><Link href="#" className="hover:text-[#343a40] text-[#343a40]">Blog</Link></li>
-          <li><Link href="#" className="hover:text-[#343a40] text-[#343a40]">Contacts</Link></li>
+          <li><Link href="/about" className="hover:text-[#343a40] text-[#343a40]">About</Link></li>
+          <li><Link href="/services" className="hover:text-[#343a40] text-[#343a40]">Services</Link></li>
+          <li><Link href="/blog" className="hover:text-[#343a40] text-[#343a40]">Blog</Link></li>
+          <li><Link href="/contacts" className="hover:text-[#343a40] text-[#343a40]">Contacts</Link></li>
          
         </ul>
       )}

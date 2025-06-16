@@ -34,8 +34,8 @@ export default function RootLayout({
          <div className="mx-auto max-w-[85rem] w-full  ">
           
           <Navbar/>
-            
         {children}
+        <Footer/>
         </div>
        
       </body>
